@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Redesign</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-size: x-large">Responsive Redesign</a>
+            <div class="collapse navbar-collapse">
+                <!-- <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item"><a class="nav-link">Home</a></li>
+                    <li class="navbar-item"><a class="nav-link">Books</a></li>
+                    <li class="navbar-item"><a class="nav-link">Events</a></li>
+                    <li class="navbar-item"><a class="nav-link">About</a></li>
+                    <li class="navbar-item"><a class="nav-link">Login</a></li>
+                </ul> -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="outer">
+        <div class="container">
+            <div class="card justify-content-center align-items-center">
+                <div class="card-body">
+                    <h4 class="header">Part 1: Identifying Usability Problems</h4>
+                    <h6>Picking a Website</h6>
+                    <p>For this project, I decided to redesign the "Featured Books" webpage for a local Providence book store called
+                        <a href="https://www.booksq.com/featured-books">Books on the Square</a>. Here is a screenshot of this specific page of the company's website:
+                    </p>
+                    <img src="booksq_screenshot.png" alt="Screenshot of original website" width="80%">
+                    <br><br>
+                    <h6>Finding Problems</h6>
+                    <p>The first problem that I found when looking at this interface was the confusing layout. The header at the top of the page is large but not used for navigation, and the navigation bar below extends down for almost half of page. There
+                        are too many navigation options to choose from, and the actual content of the page, "Featured Books," can barely be seen when the page loads. Scrolling down, we can see that the input area for searching for books is hidden on the
+                        right, amongst other information about logging in and contacting the store. On the left are the featured books, with cover photos listed under headings of specific categories of featured books. These issues can be summarized in
+                        the following list:<br>
+                        <br> Usability:
+                        <ul>
+                            <li>It is difficult to know where to look first on the page - your attention is draw to many different places at once.</li>
+                            <li>It is not immediately clear that this is indeed the featured books page, since the content is not clearly displayed.</li>
+                            <li>Due to the confusing layout hierarchy there is no clear visual flow, which makes the page hard to read and follow.</li>
+                            <li>Simplicity is important in usability; unfortunately, this web page is quite complex and convoluted.</li>
+                        </ul>
+                        <br> Learnability:
+                        <ul>
+                            <li>It is hard to learn what interactions are expected on this page: is the main focus to login? To shop? To view genreal and specific information about the store and how it operates? </li>
+                            <li>The page is split into two columns the whole way down, and it takes time to realize what the dedicated functions of these two columns are (the left column contains the featured book information; the right column is a random
+                                assortment of navigation, subscription, purchase, and search information).</li>
+                            <li>This is a difficult web page to skim, and the user must put time into learning how to operate it.</li>
+                            <li>Grouping helps first-time users determine how to navigate a web page; however, this page only groups together unrelated functionalities and thus confuses the user. </li>
+                        </ul>
+                        <br> Memorability:
+                        <ul>
+                            <li>It is difficult to remember how to navigate to a certain part of the website because there are so many options.</li>
+                            <li>After being overwhelmed by the sheer number of elements on the screen, it is difficult for the user to remember why they navigated to this page in the first place.</li>
+                            <li>It is hard to find and remeber patterns of use, since things that should be normalized - such as alignment, color, and typography - are not.</li>
+                        </ul>
+                    </p>
+                    <h6>Accessibility</h6>
+                    <p>Next, I used the <a href="https://wave.webaim.org/">WebAIM WAVE</a> tool to detect any possible accessibility concerns. This analysis showed that there are 24 contrast errors on this web page, 3 empty buttons, 3 images without alternative
+                        text, and 1 missing form label. It also noted that there are 79 alerts, many of which refer to suspicous alternative text. Further analysis using the screen reader showed that a lot of important identifying information is not captured
+                        with assisted viewing: the entire top panel, which includes the name of the store and its motto, location, and contact information, is a single image. This information is therefore not picked up by the screen reader. Additionally,
+                        it should be noted that after looking at this image, the screen reader looks through all of the navigation bar items and all of the listed featured books - the user is not shown the right column of information (including login
+                        options, search capabilities, and purchase information) until all of the books have been looked through.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="outer">
+        <div class="container">
+            <div class="card justify-content-center align-items-center">
+                <div class="card-body">
+                    <h4 class="header">Part 2: Visual Redesign</h4>
+                    <h6>Low-fidelity Wireframing: Balsamiq</h6>
+                    <p>The annotations on the wireframes below focus on several main changes:
+                        <ul>
+                            <li>Making the navigation bar more clear and concise.</li>
+                            <li>Ensuring that the store's logo and motto are eye-catching and strategically placed.</li>
+                            <li>Having the store's contact information be very visible the entire time the user is on the web page.</li>
+                            <li>Displaying featured books in a clear way that is effective and yet not overwhelming.</li>
+                            <li>Separating different featured book categories into distinct panels.</li>
+                            <li>Ensuring that the only information present is what was the user expected to see when clicking on the "books" item n the navigation menu.</li>
+                        </ul>
+                    </p>
+                    <img src="lofi/Desktop 1.png" alt="Screenshot of original website" height="400vh">
+                    <img src=" lofi/Desktop 2.png " alt="Screenshot of original website " height="400vh">
+                    <img src="lofi/Desktop 3.png " alt="Screenshot of original website " height="400vh">
+                    <br>
+                    <img src="lofi/Tablet 1.png " alt="Screenshot of original website " height="400vh">
+                    <img src="lofi/Tablet 2.png " alt="Screenshot of original website " height="400vh">
+                    <br>
+                    <img src="lofi/Mobile 1.png " alt="Screenshot of original website " height="400vh">
+                    <img src="lofi/Mobile 2.png " alt="Screenshot of original website " height="400vh">
+                    <img src="lofi/Mobile 3.png " alt="Screenshot of original website " height="400vh">
+                    <br><br>
+                    <h6>High-fidelity Prototyping: Figma</h6>
+                    <p>The annotations on the prototypes below focus on several main changes:
+                        <ul>
+                            <li>Making the navigation bar more clear and concise, and hiding extra items when the sceen size is small.</li>
+                            <li>Ensuring that the store's logo and motto are eye-catching and strategically placed no matter what device the user is on. This is achieved using flexbox.</li>
+                            <li>Having the store's contact information be very visible the entire time the user is on the web page, using a sticky footer.</li>
+                            <li>Displaying featured books in a clear way using flexbox to ensure that content is shifted according to the user's device.</li>
+                        </ul>
+                    </p>
+                    <img src="hifi/Desktop 1.png " alt="Screenshot of original website " height="400vh">
+                    <img src="hifi/Desktop 2.png " alt="Screenshot of original website " height="400vh">
+                    <img src="hifi/Desktop 3.png " alt="Screenshot of original website " height="400vh">
+                    <br>
+                    <img src="hifi/Tablet 1.png " alt="Screenshot of original website " height="400vh">
+                    <img src="hifi/Tablet 2.png " alt="Screenshot of original website " height="400vh">
+                    <img src="hifi/Tablet 3.png " alt="Screenshot of original website " height="400vh">
+                    <br>
+                    <img src="hifi/Mobile 1.png " alt="Screenshot of original website " height="400vh">
+                    <img src="hifi/Mobile 2.png " alt="Screenshot of original website " height="400vh">
+                    <img src="hifi/Mobile 3.png " alt="Screenshot of original website " height="400vh">
+                    <br><br>
+                    <h6>Visual Design Guide</h6>
+                    <p>For any elements that change on events (e.g., on hover, on click), keeping their interactions consistent throughout a product keeps the user experience coherent. Clear documentation also makes handoffs to developers easier. This is
+                        a visual design style guide that displays the reusable components’ different states (buttons on hover, click, etc.). This style guide focuses on interactive elements like input fields and buttons.</p>
+                    <img src="styleguide.png " alt="Screenshot of original website " height="400vh">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="outer ">
+        <div class="container ">
+            <div class="card justify-content-center align-items-center ">
+                <div class="card-body ">
+                    <h4 class="header ">Part 3: Responsive Redesign</h4>
+                    <p>Here is <a href="https://glacial-anchorage-26515.herokuapp.com/">my redesigned web page</a>! The testing I performed showed that it is indeed a responsive web page, thanks mostly to the use of flexbox and flex items. It is also clearer
+                        and cleaner than the original, resulting in ultimately a better and more effective user experience.</p>
+                    <img src="redesigned.png" alt="Screenshot of original website " height="400vh">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+body {
+    background: url(./wallpaper.jpeg) center fixed;
+    height: calc(100vh - 56px);
+}
+
+.outer {
+    position: relative;
+    top: 30px;
+}
